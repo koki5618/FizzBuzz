@@ -1,20 +1,22 @@
 package fizzbuzz;
 
 public class Step1 {
-
 	public static void main(String[] args) {
 		for (int i = 1; i <= 30; i++) {
 			if (i % 3 == 0 && i % 5 == 0) {
-				System.out.println("FizzBuzz");
+				print("FizzBuzz");
 			} else if (i % 5 == 0) {
-				System.out.println("Buzz");
+				print("Buzz");
 			} else if (i % 3 == 0) {
-				System.out.println("Fizz");
+				print("Fizz");
 			} else {
-				System.out.println(i);
+				print(i);
 			}
 
 		}
+	}
+	public static void print(Object o) {
+		System.out.println(o);
 	}
 
 }
